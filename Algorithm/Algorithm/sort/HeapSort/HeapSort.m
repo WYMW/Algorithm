@@ -6,36 +6,48 @@
 //
 
 #import "HeapSort.h"
-
+#import <math.h>
 @implementation HeapSort
 
-+ (void)maxHeapify:(NSMutableArray *)arry index:(NSInteger)index {
-    if (2 * index > [arry count]) {
-        return;
++ (void)maxHeapify:(NSMutableArray *)arry index:(NSInteger)index end:(NSInteger)end {
+    NSInteger left = index * 2 + 1;
+    NSInteger right = index * 2 + 2;
+    NSInteger large = index;
+    if (left < end && [arry[left] isGreaterThan: arry[large]]) {
+        large = left;
     }
-    [HeapSort maxHeapify:arry index:2 * index];
-    if (2 * index <= [arry count]) {
-        [HeapSort maxHeapify:arry index: 2 * index + 1];
+    if (right < end && [arry[right] isGreaterThan: arry[large]] ) {
+        large = right;
     }
-    
-    if (2 * index <= [arry count]) {
-        long maxIndex = 2 * index - 1;
-        if ([arry[2 * index - 1] doubleValue] < [arry[2 * index] doubleValue]) {
-            maxIndex = 2 * index;
-        }
-        
-        if ([arry[index - 1] doubleValue] < [arry[maxIndex] doubleValue]  ) {
-            NSNumber *t = arry[index - 1] ;
-            arry[index - 1] = arry[maxIndex];
-            arry[maxIndex] = t;
-        }
+    if (large != index) {
+        id t = arry[large];
+        arry[large] = arry[index];
+        arry[index] = t;
+        [HeapSort maxHeapify:arry index:large end:end];
     }
 }
 
 + (void)testHeapify {
     
-    NSMutableArray *array = [NSMutableArray arrayWithObjects:@(8),@(6),@(5),@(3),nil];
-    [HeapSort maxHeapify:array index:1];
+    NSMutableArray *array = [NSMutableArray arrayWithObjects:@(6),@(8),@(5),@(7),@(4),@(2), @(80),nil];
+    [HeapSort heapSort:array];
+}
+
++ (void)generateBigHeap:(NSMutableArray *)array end:(NSInteger)end {
+    int deep = floor(log2(end)) + 1;
+    int start = pow(2, deep - 1) - 2;
+    for (int i = start; i >= 0; i--) {
+        [HeapSort maxHeapify:array index:i end:end];
+    }
+}
+
++(void)heapSort:(NSMutableArray *)array {
+    for (NSUInteger i = array.count; i > 0; i--) {
+        [HeapSort generateBigHeap:array end:i];
+        id t = array[0];
+        array[0] = array[i - 1];
+        array[i - 1] = t;
+    }
     for (int i = 0; i < [array count]; i++) {
         NSLog(@"%@", array[i]);
     }

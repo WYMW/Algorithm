@@ -11,8 +11,8 @@
 		CAA9E35C26A2E0950055AA03 /* MergeSort.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA9E35B26A2E0950055AA03 /* MergeSort.m */; };
 		CAA9E37226A335160055AA03 /* AlgorithmTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA9E37126A335160055AA03 /* AlgorithmTest.m */; };
 		CAA9E37726A337230055AA03 /* MergeSort.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA9E35B26A2E0950055AA03 /* MergeSort.m */; };
-		CAA9E37B26A3FA230055AA03 /* HeapSort.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA9E37A26A3FA230055AA03 /* HeapSort.m */; };
-		CAA9E37C26A404E50055AA03 /* HeapSort.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA9E37A26A3FA230055AA03 /* HeapSort.m */; };
+		DD5C5D2626A4184900BACDF4 /* HeapSort.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5C5D2326A4184900BACDF4 /* HeapSort.m */; };
+		DD5C5D2726A4184900BACDF4 /* HeapSort.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5C5D2326A4184900BACDF4 /* HeapSort.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,8 +37,8 @@
 		CAA9E36F26A335160055AA03 /* AlgorithmTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgorithmTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAA9E37126A335160055AA03 /* AlgorithmTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlgorithmTest.m; sourceTree = "<group>"; };
 		CAA9E37326A335160055AA03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CAA9E37926A3FA230055AA03 /* HeapSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HeapSort.h; path = ../../../../../../HeapSort.h; sourceTree = "<group>"; };
-		CAA9E37A26A3FA230055AA03 /* HeapSort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HeapSort.m; path = ../../../../../../HeapSort.m; sourceTree = "<group>"; };
+		DD5C5D2226A4184900BACDF4 /* HeapSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeapSort.h; sourceTree = "<group>"; };
+		DD5C5D2326A4184900BACDF4 /* HeapSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeapSort.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +90,7 @@
 		CAA9E35926A2E06F0055AA03 /* sort */ = {
 			isa = PBXGroup;
 			children = (
-				CAA9E37826A3FA010055AA03 /* HeapSort */,
+				DD5C5D2126A4184900BACDF4 /* HeapSort */,
 				CAA9E35A26A2E0950055AA03 /* MergeSort.h */,
 				CAA9E35B26A2E0950055AA03 /* MergeSort.m */,
 			);
@@ -115,11 +115,11 @@
 			path = AlgorithmTest;
 			sourceTree = "<group>";
 		};
-		CAA9E37826A3FA010055AA03 /* HeapSort */ = {
+		DD5C5D2126A4184900BACDF4 /* HeapSort */ = {
 			isa = PBXGroup;
 			children = (
-				CAA9E37926A3FA230055AA03 /* HeapSort.h */,
-				CAA9E37A26A3FA230055AA03 /* HeapSort.m */,
+				DD5C5D2226A4184900BACDF4 /* HeapSort.h */,
+				DD5C5D2326A4184900BACDF4 /* HeapSort.m */,
 			);
 			path = HeapSort;
 			sourceTree = "<group>";
@@ -211,9 +211,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAA9E37B26A3FA230055AA03 /* HeapSort.m in Sources */,
 				CAA9E35C26A2E0950055AA03 /* MergeSort.m in Sources */,
 				CAA9E35326A2E0610055AA03 /* main.m in Sources */,
+				DD5C5D2626A4184900BACDF4 /* HeapSort.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,9 +221,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAA9E37C26A404E50055AA03 /* HeapSort.m in Sources */,
 				CAA9E37726A337230055AA03 /* MergeSort.m in Sources */,
 				CAA9E37226A335160055AA03 /* AlgorithmTest.m in Sources */,
+				DD5C5D2726A4184900BACDF4 /* HeapSort.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +281,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -334,7 +334,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
