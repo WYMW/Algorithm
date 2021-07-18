@@ -7,6 +7,7 @@
 
 #import <XCTest/XCTest.h>
 #import "MergeSort.h"
+#import "HeapSort.h"
 @interface AlgorithmTest : XCTestCase
 
 @end
@@ -50,6 +51,10 @@
     }
     
     XCTAssertTrue(success, @"排序失败");
+}
+
+- (void)testHeapSort {
+    [HeapSort testHeapify];
 }
 
 - (void)testPerformanceExample {
