@@ -8,6 +8,7 @@
 #import <XCTest/XCTest.h>
 #import "MergeSort.h"
 #import "HeapSort.h"
+#import "QuicklySort.h"
 @interface AlgorithmTest : XCTestCase
 
 @end
@@ -56,6 +57,15 @@
 - (void)testHeapSort {
     [HeapSort testHeapify];
 }
+
+- (void)testQuickSort {
+    NSMutableArray *array = [NSMutableArray arrayWithArray:@[@(2), @(8), @(7), @(1), @(3), @(5), @(6), @(4)]];
+    [QuicklySort quicklySort:array start:0 end:[array count] - 1];
+    for (int i = 0; i < array.count; i++) {
+        NSLog(@"%@", array[i]);
+    }
+}
+
 
 - (void)testPerformanceExample {
     // This is an example of a performance test case.

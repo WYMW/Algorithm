@@ -13,6 +13,8 @@
 		CAA9E37726A337230055AA03 /* MergeSort.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA9E35B26A2E0950055AA03 /* MergeSort.m */; };
 		DD5C5D2626A4184900BACDF4 /* HeapSort.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5C5D2326A4184900BACDF4 /* HeapSort.m */; };
 		DD5C5D2726A4184900BACDF4 /* HeapSort.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5C5D2326A4184900BACDF4 /* HeapSort.m */; };
+		DD6BC75F26ABFC0B00D9D59C /* QuicklySort.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6BC75D26ABFC0B00D9D59C /* QuicklySort.m */; };
+		DD6BC76226AC03AD00D9D59C /* QuicklySort.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6BC75D26ABFC0B00D9D59C /* QuicklySort.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +41,8 @@
 		CAA9E37326A335160055AA03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD5C5D2226A4184900BACDF4 /* HeapSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeapSort.h; sourceTree = "<group>"; };
 		DD5C5D2326A4184900BACDF4 /* HeapSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeapSort.m; sourceTree = "<group>"; };
+		DD6BC75D26ABFC0B00D9D59C /* QuicklySort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuicklySort.m; sourceTree = "<group>"; };
+		DD6BC75E26ABFC0B00D9D59C /* QuicklySort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuicklySort.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,7 @@
 		CAA9E35926A2E06F0055AA03 /* sort */ = {
 			isa = PBXGroup;
 			children = (
+				DD6BC75C26ABFBED00D9D59C /* QuicklySort */,
 				DD5C5D2126A4184900BACDF4 /* HeapSort */,
 				CAA9E35A26A2E0950055AA03 /* MergeSort.h */,
 				CAA9E35B26A2E0950055AA03 /* MergeSort.m */,
@@ -122,6 +127,15 @@
 				DD5C5D2326A4184900BACDF4 /* HeapSort.m */,
 			);
 			path = HeapSort;
+			sourceTree = "<group>";
+		};
+		DD6BC75C26ABFBED00D9D59C /* QuicklySort */ = {
+			isa = PBXGroup;
+			children = (
+				DD6BC75E26ABFC0B00D9D59C /* QuicklySort.h */,
+				DD6BC75D26ABFC0B00D9D59C /* QuicklySort.m */,
+			);
+			path = QuicklySort;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +227,7 @@
 			files = (
 				CAA9E35C26A2E0950055AA03 /* MergeSort.m in Sources */,
 				CAA9E35326A2E0610055AA03 /* main.m in Sources */,
+				DD6BC75F26ABFC0B00D9D59C /* QuicklySort.m in Sources */,
 				DD5C5D2626A4184900BACDF4 /* HeapSort.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD6BC76226AC03AD00D9D59C /* QuicklySort.m in Sources */,
 				CAA9E37726A337230055AA03 /* MergeSort.m in Sources */,
 				CAA9E37226A335160055AA03 /* AlgorithmTest.m in Sources */,
 				DD5C5D2726A4184900BACDF4 /* HeapSort.m in Sources */,
