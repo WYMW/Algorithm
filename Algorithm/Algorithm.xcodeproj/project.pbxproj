@@ -94,10 +94,9 @@
 		CAA9E35926A2E06F0055AA03 /* sort */ = {
 			isa = PBXGroup;
 			children = (
+				DD6BC76526AC235400D9D59C /* MergeSort */,
 				DD6BC75C26ABFBED00D9D59C /* QuicklySort */,
 				DD5C5D2126A4184900BACDF4 /* HeapSort */,
-				CAA9E35A26A2E0950055AA03 /* MergeSort.h */,
-				CAA9E35B26A2E0950055AA03 /* MergeSort.m */,
 			);
 			path = sort;
 			sourceTree = "<group>";
@@ -136,6 +135,15 @@
 				DD6BC75D26ABFC0B00D9D59C /* QuicklySort.m */,
 			);
 			path = QuicklySort;
+			sourceTree = "<group>";
+		};
+		DD6BC76526AC235400D9D59C /* MergeSort */ = {
+			isa = PBXGroup;
+			children = (
+				CAA9E35A26A2E0950055AA03 /* MergeSort.h */,
+				CAA9E35B26A2E0950055AA03 /* MergeSort.m */,
+			);
+			path = MergeSort;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

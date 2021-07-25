@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/appbi/Desktop/Algorithm/C-Algorithm/MergeSort.c
+stdlib.h
+/Users/appbi/Desktop/Algorithm/C-Algorithm/stdlib.h
+stdio.h
+/Users/appbi/Desktop/Algorithm/C-Algorithm/stdio.h
+math.h
+/Users/appbi/Desktop/Algorithm/C-Algorithm/math.h
+
